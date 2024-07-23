@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOROZ Automotores</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>MOROZ Automotores</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#auto">Autos</a></li>
+          <li><a href="#camioneta">Camionetas</a></li>
+          <li><a href="#repuesto">Repuestos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mainIndex">
+      <form id="form">
+        <input
+          type="text"
+          placeholder="Ingresa el nombre del producto"
+          id="title"
+        />
+        <input
+          type="text"
+          placeholder="Ingresa la categoria del producto"
+          id="category"
+        />
+        <input
+          type="number"
+          placeholder="Ingresa el precio del producto"
+          id="price"
+        />
+        <input
+          type="number"
+          placeholder="Ingresa la cantidad del producto"
+          id="quanty"
+        />
+        <button type="submit">Guardar</button>
+        <button type="button">Cancelar</button>
+      </form>
+      <div id="containerProducts"></div>
+
+      <h1>Carrito</h1>
+      <div id="products-container"></div>
+      <h2>Producto</h2>
+      <div id="cart"></div>
+      <div id="total">Total: $0</div>
+    </main>
+    <footer>
+      <p>&copy; 2024 MOROZ Automotores. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
